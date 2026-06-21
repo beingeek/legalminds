@@ -13,20 +13,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+92 300 1234567", "+92 42 35761234"],
-    action: "tel:+923001234567",
+    details: ["+92 302 6900892"],
+    action: "tel:+923026900892",
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@legalminds.pk", "consultation@legalminds.pk"],
-    action: "mailto:info@legalminds.pk",
+    details: ["legalminds1992@gmail.com"],
+    action: "mailto:legalminds1992@gmail.com",
   },
   {
     icon: MapPin,
     title: "Office",
-    details: ["123 Legal Tower, Main Boulevard", "Gulberg III, Lahore, Pakistan"],
-    action: "https://maps.google.com",
+    details: ["2-Bank Square", "The Mall Road, Lahore, Pakistan"],
+    action: "https://maps.google.com?q=31.567728,74.313383",
   },
   {
     icon: Clock,
@@ -202,7 +202,7 @@ export function ContactSection() {
                 className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
                 asChild
               >
-                <Link href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/923026900892" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Chat on WhatsApp
                 </Link>
@@ -252,7 +252,7 @@ export function ContactSection() {
               <CardContent className="p-0">
                 <div className="aspect-[16/9] bg-muted relative">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.5073547665893!2d74.3509033!3d31.5119333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905557df9b3b1%3A0xf36e9f5f5e1c7c3!2sGulberg%20III%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.7896785410847!2d74.313383!3d31.567728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904e5e9999999%3A0x1234567890!2s2-Bank%20Square%2C%20The%20Mall%20Road%2C%20Lahore!5e0!3m2!1sen!2s!4v1699999999999!5m2!1sen!2s"
                     className="w-full h-full border-0"
                     allowFullScreen
                     loading="lazy"

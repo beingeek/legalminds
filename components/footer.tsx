@@ -124,24 +124,24 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <p className="text-primary-foreground/60 font-sans text-sm">
-                  123 Legal Tower, Main Boulevard<br />
-                  Gulberg III, Lahore, Pakistan
+                  2-Bank Square<br />
+                  The Mall Road, Lahore, Pakistan
                 </p>
               </li>
               <li>
                 <Link
-                  href="tel:+923001234567"
+                  href="tel:+923026900892"
                   className="text-primary-foreground/60 hover:text-accent font-sans text-sm transition-colors"
                 >
-                  +92 300 1234567
+                  +92 302 6900892
                 </Link>
               </li>
               <li>
                 <Link
-                  href="mailto:info@legalminds.pk"
+                  href="mailto:legalminds1992@gmail.com"
                   className="text-primary-foreground/60 hover:text-accent font-sans text-sm transition-colors"
                 >
-                  info@legalminds.pk
+                  legalminds1992@gmail.com
                 </Link>
               </li>
               <li>
