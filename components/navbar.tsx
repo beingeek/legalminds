@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
@@ -69,17 +69,6 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <Button
-              variant="outline"
-              size="sm"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans uppercase tracking-wider text-xs"
-              asChild
-            >
-              <Link href="tel:+923001234567">
-                <Phone className="w-3 h-3 mr-2" />
-                Call Now
-              </Link>
-            </Button>
-            <Button
               size="sm"
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-sans uppercase tracking-wider text-xs"
               asChild
@@ -120,16 +109,6 @@ export function Navbar() {
                   ))}
                 </nav>
                 <div className="mt-auto pb-8 flex flex-col gap-3">
-                  <Button
-                    variant="outline"
-                    className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans uppercase tracking-wider text-xs"
-                    asChild
-                  >
-                    <Link href="tel:+923001234567">
-                      <Phone className="w-3 h-3 mr-2" />
-                      Call Now
-                    </Link>
-                  </Button>
                   <Button
                     className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-sans uppercase tracking-wider text-xs"
                     asChild

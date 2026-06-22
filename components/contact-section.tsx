@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle, CheckCircle } from "lucide-react"
+import { Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -10,12 +10,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 
 const contactInfo = [
-  {
-    icon: Phone,
-    title: "Phone",
-    details: ["+92 302 6900892"],
-    action: "tel:+923026900892",
-  },
   {
     icon: Mail,
     title: "Email",
@@ -138,18 +132,6 @@ export function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="font-sans text-sm">
-                        Phone Number
-                      </Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+92 300 1234567"
-                        className="bg-background border-border focus:border-accent"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
                       <Label htmlFor="subject" className="font-sans text-sm">
                         Subject
                       </Label>
@@ -194,20 +176,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* WhatsApp Button */}
-            <div className="mt-6">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
-                asChild
-              >
-                <Link href="https://wa.me/923026900892" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Chat on WhatsApp
-                </Link>
-              </Button>
-            </div>
+
           </div>
 
           {/* Contact Info & Map */}
