@@ -11,16 +11,16 @@ import Link from "next/link"
 
 const contactInfo = [
   {
-    icon: Phone,
-    title: "Phone",
-    details: ["+92 302 6900892"],
-    action: "tel:+923026900892",
-  },
-  {
     icon: Mail,
     title: "Email",
     details: ["legalminds1992@gmail.com"],
     action: "mailto:legalminds1992@gmail.com",
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    details: ["+92 302 6900892"],
+    action: "tel:+923026900892",
   },
   {
     icon: MapPin,
@@ -138,18 +138,6 @@ export function ContactSection() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="font-sans text-sm">
-                        Phone Number
-                      </Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="+92 300 1234567"
-                        className="bg-background border-border focus:border-accent"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
                       <Label htmlFor="subject" className="font-sans text-sm">
                         Subject
                       </Label>
@@ -194,20 +182,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* WhatsApp Button */}
-            <div className="mt-6">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
-                asChild
-              >
-                <Link href="https://wa.me/923026900892" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Chat on WhatsApp
-                </Link>
-              </Button>
-            </div>
+
           </div>
 
           {/* Contact Info & Map */}
@@ -262,6 +237,21 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* WhatsApp Button */}
+            <div className="mt-6">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
+                asChild
+              >
+                <Link href="https://wa.me/923026900892?text=Hello%20legal%20minds%20consultants%2C%20i%20am%20reaching%20out%20you%20via%20legallminds.com" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Chat on WhatsApp
+                </Link>
+              </Button>
+            </div>
 
             {/* Confidentiality Note */}
             <div className="bg-secondary/50 rounded-lg p-6 border border-border">

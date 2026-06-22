@@ -92,7 +92,7 @@ export function HeroSection() {
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-sans uppercase tracking-wider px-8 py-6 text-sm group"
               asChild
             >
-              <Link href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer">
+              <Link href="https://wa.me/923026900892?text=Hello%20legal%20minds%20consultants%2C%20i%20am%20reaching%20out%20you%20via%20legallminds.com" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp Us
               </Link>
