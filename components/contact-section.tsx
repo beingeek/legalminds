@@ -246,7 +246,7 @@ export function ContactSection() {
                 className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
                 asChild
               >
-                <Link href="https://wa.me/923026900892" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/923026900892?text=Hello%20legal%20minds%20consultants%2C%20i%20am%20reaching%20out%20you%20via%20legallminds.com" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Chat on WhatsApp
                 </Link>
