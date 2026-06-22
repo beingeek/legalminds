@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -15,6 +15,12 @@ const contactInfo = [
     title: "Email",
     details: ["legalminds1992@gmail.com"],
     action: "mailto:legalminds1992@gmail.com",
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    details: ["+92 302 6900892"],
+    action: "tel:+923026900892",
   },
   {
     icon: MapPin,
@@ -231,6 +237,21 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* WhatsApp Button */}
+            <div className="mt-6">
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-sans uppercase tracking-wider"
+                asChild
+              >
+                <Link href="https://wa.me/923026900892" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Chat on WhatsApp
+                </Link>
+              </Button>
+            </div>
 
             {/* Confidentiality Note */}
             <div className="bg-secondary/50 rounded-lg p-6 border border-border">

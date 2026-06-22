@@ -130,6 +130,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="tel:+923026900892"
+                  className="text-primary-foreground/60 hover:text-accent font-sans text-sm transition-colors"
+                >
+                  +92 302 6900892
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="mailto:legalminds1992@gmail.com"
                   className="text-primary-foreground/60 hover:text-accent font-sans text-sm transition-colors"
                 >
